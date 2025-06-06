@@ -5,8 +5,8 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  url       = env("DATABASE_POSTGRES_URL")
-  directUrl = env("DATABASE_POSTGRES_URL_NON_POOLING")
+  url       = env("SUPABASE_DATABASE_POSTGRES_URL")
+  directUrl = env("SUPABASE_DATABASE_POSTGRES_URL_NON_POOLING")
 }
 
 model Post {
